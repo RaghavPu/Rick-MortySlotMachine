@@ -97,7 +97,6 @@ namespace RickandMortySlotMachine
 
             }
 
-            Console.WriteLine(Mouse.GetState().X);
 
             base.Update(gameTime);
         }
