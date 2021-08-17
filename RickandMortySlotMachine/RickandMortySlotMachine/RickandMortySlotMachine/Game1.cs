@@ -19,9 +19,12 @@ namespace RickandMortySlotMachine
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        GameState gameState;
+        public static GameState gameState;
 
         StartScreen startScreen;
+        GameScreen gameScreen;
+
+        MouseState oldMouseState;
 
         public Game1()
         {
@@ -40,8 +43,13 @@ namespace RickandMortySlotMachine
         {
             // TODO: Add your initialization logic here
             gameState = GameState.START;
+
             startScreen = new StartScreen(GraphicsDevice.Viewport.Width,
                 GraphicsDevice.Viewport.Height);
+            gameScreen = new GameScreen(GraphicsDevice.Viewport.Width,
+                GraphicsDevice.Viewport.Height);
+
+            oldMouseState = Mouse.GetState();
 
             base.Initialize();
         }
@@ -86,18 +94,18 @@ namespace RickandMortySlotMachine
             // TODO: Add your update logic here
             if (gameState == GameState.START)
             {
-                startScreen.Update(mouseState);
+                startScreen.Update(oldMouseState, mouseState);
             }
             else if (gameState == GameState.PLAY)
             {
-
+                gameScreen.Update(oldMouseState, mouseState);
             }
             else if (gameState == GameState.QUIT)
             {
 
             }
 
-
+            oldMouseState = mouseState;
             base.Update(gameTime);
         }
 
@@ -107,7 +115,7 @@ namespace RickandMortySlotMachine
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
@@ -118,7 +126,7 @@ namespace RickandMortySlotMachine
             }
             else if (gameState == GameState.PLAY)
             {
-
+                gameScreen.Draw(spriteBatch);
             }
             else if (gameState == GameState.QUIT)
             {

@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\CirclePointer.xnb</Output>
-      <Time>2021-08-17T10:59:43.7073572-05:00</Time>
+      <Output>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\CirclePointer.xnb</Output>
+      <Time>2021-08-17T11:25:20.5100256-05:00</Time>
     </Item>
     <Item>
       <Source>LabelPromptFont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\LabelPromptFont.xnb</Output>
-      <Time>2021-08-17T11:20:39.9282829-05:00</Time>
+      <Output>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\LabelPromptFont.xnb</Output>
+      <Time>2021-08-17T11:25:20.5256548-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -26,10 +26,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachineContent\</RootDirectory>
-      <LoggerRootDirectory>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\</LoggerRootDirectory>
-      <IntermediateDirectory>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>\\fisd-student1\hs\ihs\250830\documents\visual studio 2015\Projects\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachineContent\</RootDirectory>
+      <LoggerRootDirectory>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\</LoggerRootDirectory>
+      <IntermediateDirectory>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -73,10 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button.cs" />
+    <Compile Include="GameScreen.cs" />
     <Compile Include="MousePointer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="RandomSlotManager.cs" />
     <Compile Include="StartScreen.cs" />
   </ItemGroup>
   <ItemGroup>

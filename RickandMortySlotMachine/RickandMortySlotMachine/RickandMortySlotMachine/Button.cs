@@ -45,8 +45,8 @@ namespace RickandMortySlotMachine
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(buttonImage, location, (overLapping) ? Color.White : Color.Black);
-            spriteBatch.DrawString(font, text, textLocation, (overLapping) ? Color.Black : Color.White);
+            spriteBatch.Draw(buttonImage, location, (overLapping) ? Color.Black : Color.LightCyan);
+            spriteBatch.DrawString(font, text, textLocation, (overLapping) ? Color.White : Color.Black);
         }
 
         public void Update(float x, float y)
