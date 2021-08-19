@@ -10,7 +10,7 @@ namespace RickandMortySlotMachine
 {
     class RandomSlotManager
     {
-        public static int NUMBER_OF_SLOTS = 20;
+        public static int NUMBER_OF_SLOTS = 9;
 
         Random random;
         int[] slots;

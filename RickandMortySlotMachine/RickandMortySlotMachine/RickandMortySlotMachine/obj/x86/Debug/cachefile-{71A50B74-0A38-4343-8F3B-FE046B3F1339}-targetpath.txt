@@ -1,2 +1,11 @@
 Content\CirclePointer.xnb
 Content\LabelPromptFont.xnb
+Content\Slot-Images\slot_icon8.xnb
+Content\Slot-Images\slot_icon0.xnb
+Content\Slot-Images\slot_icon1.xnb
+Content\Slot-Images\slot_icon2.xnb
+Content\Slot-Images\slot_icon3.xnb
+Content\Slot-Images\slot_icon4.xnb
+Content\Slot-Images\slot_icon5.xnb
+Content\Slot-Images\slot_icon6.xnb
+Content\Slot-Images\slot_icon7.xnb

@@ -67,6 +67,7 @@ namespace RickandMortySlotMachine
             MousePointer.loadPointerImage(this);
             Button.loadContent(this);
             LabelPrompt.loadSpriteFont(this);
+            SlotWheel.loadSlotIcons(this);
         }
 
         /// <summary>

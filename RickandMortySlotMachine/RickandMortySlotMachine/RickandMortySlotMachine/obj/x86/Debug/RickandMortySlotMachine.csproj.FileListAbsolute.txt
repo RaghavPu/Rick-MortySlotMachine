@@ -34,3 +34,12 @@
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\obj\x86\Debug\RickandMortySlotMachine.exe
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\obj\x86\Debug\RickandMortySlotMachine.pdb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon8.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon0.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon1.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon2.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon3.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon4.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon5.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon6.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon7.xnb
