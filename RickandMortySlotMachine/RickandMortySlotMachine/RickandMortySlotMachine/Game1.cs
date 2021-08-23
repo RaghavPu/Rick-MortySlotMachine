@@ -46,6 +46,8 @@ namespace RickandMortySlotMachine
 
             startScreen = new StartScreen(GraphicsDevice.Viewport.Width,
                 GraphicsDevice.Viewport.Height);
+
+            GameScreen.LoadContent(this);
             gameScreen = new GameScreen(GraphicsDevice.Viewport.Width,
                 GraphicsDevice.Viewport.Height);
 
@@ -67,7 +69,6 @@ namespace RickandMortySlotMachine
             MousePointer.loadPointerImage(this);
             Button.loadContent(this);
             LabelPrompt.loadSpriteFont(this);
-            SlotWheel.loadSlotIcons(this);
         }
 
         /// <summary>
