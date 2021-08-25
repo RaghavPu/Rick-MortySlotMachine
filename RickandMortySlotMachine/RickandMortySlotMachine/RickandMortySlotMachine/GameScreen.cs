@@ -13,13 +13,16 @@ namespace RickandMortySlotMachine
 {
     class GameScreen
     {
-        //SlotWheel slotWheel;
         SlotWheelManager slotWheelManager;
+        MousePointer mousePointer;
+        Lever lever;
 
         public GameScreen(int width, int height)
         {
             //slotWheel = new SlotWheel(100, 100);
             slotWheelManager = new SlotWheelManager();
+            mousePointer = new MousePointer(50, 50, width, height);
+            lever = new Lever();
         }
 
         public void Update(MouseState oldMouseState, MouseState mouseState)
@@ -29,17 +32,22 @@ namespace RickandMortySlotMachine
             //    slotWheel.Update(true);
             //else
             //    slotWheel.Update(false);
-            slotWheelManager.Update(oldMouseState, mouseState);
+            bool leverPulled = lever.Update(oldMouseState, mouseState, slotWheelManager);
+            slotWheelManager.Update(leverPulled);
+            mousePointer.Update(mouseState);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             slotWheelManager.Draw(spriteBatch);
+            lever.Draw(spriteBatch);
+            mousePointer.Draw(spriteBatch);
         }
 
         public static void LoadContent(Game game)
         {
             SlotWheelManager.loadContent(game);
+            Lever.loadContent(game);
         }
 
     }

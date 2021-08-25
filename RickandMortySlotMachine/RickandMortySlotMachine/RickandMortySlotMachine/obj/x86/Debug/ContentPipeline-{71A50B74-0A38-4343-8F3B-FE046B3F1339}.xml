@@ -100,6 +100,24 @@
       <Output>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon7.xnb</Output>
       <Time>2021-08-19T11:47:44.1651113-05:00</Time>
     </Item>
+    <Item>
+      <Source>Lever\lever-handle.png</Source>
+      <Name>Lever\lever-handle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Lever\lever-handle.xnb</Output>
+      <Time>2021-08-25T11:34:21.044816-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Lever\lever-slot.png</Source>
+      <Name>Lever\lever-slot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Lever\lever-slot.xnb</Output>
+      <Time>2021-08-25T11:41:07.8906187-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{71A50B74-0A38-4343-8F3B-FE046B3F1339}</ContentProjectGUID>

@@ -14,21 +14,23 @@ namespace RickandMortySlotMachine
     class SlotWheelManager
     {
         SlotWheel[] slotWheels;
+        public bool slotsSpinning;
 
         public SlotWheelManager()
         {
             slotWheels = new SlotWheel[3];
+            slotsSpinning = false;
             for (int i = 0; i < slotWheels.Length; i++)
             {
-                slotWheels[i] = new SlotWheel(100 + (i * 100), 100 + (i * 30), 50 + (i * 20), i);
+                slotWheels[i] = new SlotWheel(100 + (i * 100), 100 + (i * 60), 50 + (i * 20), i);
             }
         }
 
-        public void Update(MouseState oldMouseState, MouseState mouseState)
+        public void Update(bool leverPulled)
         {
-            bool slotsSpinning = slotWheels[0].spinning || slotWheels[1].spinning || slotWheels[2].spinning;
+            slotsSpinning = slotWheels[0].spinning || slotWheels[1].spinning || slotWheels[2].spinning;
 
-            if (!slotsSpinning && oldMouseState.LeftButton != ButtonState.Pressed && mouseState.LeftButton == ButtonState.Pressed)
+            if (!slotsSpinning && leverPulled)
             {
                 for (int i = 0; i < slotWheels.Length; i++) slotWheels[i].Update(true);
             }

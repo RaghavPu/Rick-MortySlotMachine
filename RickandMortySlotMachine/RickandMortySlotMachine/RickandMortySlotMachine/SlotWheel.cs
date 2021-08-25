@@ -26,16 +26,18 @@ namespace RickandMortySlotMachine
         bool positionReached;
         int x;
 
+        double highestSpeed;
         double speed;
         int id;
 
         public SlotWheel(int x, int spinTime, int speed, int id)
         {
             this.x = x;
-            middleY = 150;
+            middleY = 200;
             this.spinning = false;
             this.totalSpinTime = spinTime;
             this.spinningTime = 0;
+            this.highestSpeed = speed;
             this.speed = speed;
             this.positionReached = false;
 
@@ -45,9 +47,9 @@ namespace RickandMortySlotMachine
 
             for (int i = 0; i < 4; i++)
             {
-                double verticalFactor = getVerticalFactor(i * 65 + (int)(getVerticalFactor(i * 65) / 2));
+                double verticalFactor = getVerticalFactor(50 + i * 90 + (int)(getVerticalFactor(50 + i * 90) / 2));
      
-                iconRectangles[i] = new Rectangle(x + (int)getXOffset(verticalFactor), i * 75, (int)verticalFactor, (int)verticalFactor);
+                iconRectangles[i] = new Rectangle(x/* + (int)getXOffset(verticalFactor)*/, 50 + i * 90, (int)verticalFactor, (int)verticalFactor);
                 Console.WriteLine((i * 75) + " " + verticalFactor);
             }
 
@@ -87,28 +89,32 @@ namespace RickandMortySlotMachine
                 spinningTime++;
                 for (int i = 0; i < iconRectangles.Length; i++)
                 {
-                    // FIX THIS AFTER YOU GET HOME
-                    double verticalFactor = getVerticalFactor(i * 65 + (int)(getVerticalFactor(i * 65) / 2));
-                    //double verticalFactor = getVerticalFactor(iconRectangles[i].Y + (int)speed + (int)(getVerticalFactor(iconRectangles[i].Y + (int)speed));
-                    iconRectangles[i] = new Rectangle(x + (int)getXOffset(verticalFactor), iconRectangles[i].Y + (int)speed, (int)verticalFactor, (int)verticalFactor);
+                    if (iconRectangles[i].Y + (int)speed >= 400)
+                    {
+                        iconRectangles[i] = new Rectangle(x, 50 + ((int)speed - (400 - iconRectangles[i].Y)), 0, 0);
+                        icons[i] = slotIcons[random.Next(slotIcons.Length)];
+                    } 
+                    else
+                    {
+                        //double verticalFactor = getVerticalFactor(i * 65 + (int)(getVerticalFactor(i * 65) / 2));
+                        double verticalFactor = getVerticalFactor(iconRectangles[i].Y + (int)speed + (int)(getVerticalFactor(iconRectangles[i].Y + (int)speed) / 2));
+                        //double verticalFactor = getVerticalFactor(iconRectangles[i].Y + (int)speed + (int)(getVerticalFactor(iconRectangles[i].Y + (int)speed));
+                        iconRectangles[i] = new Rectangle(x/* + (int)getXOffset(verticalFactor)*/, iconRectangles[i].Y + (int)speed, (int)verticalFactor, (int)verticalFactor);
+                    }
 
                     if (spinningTime >= totalSpinTime)
                     {
-                        if (iconRectangles[i].Y == middleY) positionReached = true;
+                        if (Math.Abs(iconRectangles[i].Y - middleY) < 5) positionReached = true;
                     }
-                    if (iconRectangles[i].Y >= 300)
-                    {
-                        iconRectangles[i] = new Rectangle(x, 0, 0, 0);
-                        icons[i] = slotIcons[random.Next(slotIcons.Length)];
-                    }
+                    
                 }
-                speed = Math.Max(10, speed - 0.5);
+                speed = Math.Max(5, speed - 0.5);
                 if (spinningTime >= totalSpinTime && positionReached)
                 {
                     spinning = false;
                     positionReached = false;
                     spinningTime = 0;
-                    speed = 50;
+                    speed = highestSpeed;
                 }
                     
             }

@@ -43,3 +43,5 @@
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon5.xnb
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon6.xnb
 \\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Slot-Images\slot_icon7.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Lever\lever-handle.xnb
+\\Fisd-student1\hs\ihs\250830\Documents\GitHub\Rick-MortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\RickandMortySlotMachine\bin\x86\Debug\Content\Lever\lever-slot.xnb
