@@ -42,7 +42,8 @@ namespace RickandMortySlotMachine
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(circleImage, container, null, Color.White, 0, new Vector2(circleImage.Width / 2, circleImage.Height / 2), SpriteEffects.None, 0);
+            spriteBatch.Draw(circleImage, container, Color.White);
+            // spriteBatch.Draw(circleImage, container, null, Color.White, 0, new Vector2(circleImage.Width / 2, circleImage.Height / 2), SpriteEffects.None, 0);
         }
     }
 }

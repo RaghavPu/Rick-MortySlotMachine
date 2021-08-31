@@ -26,6 +26,10 @@ namespace RickandMortySlotMachine
 
         MouseState oldMouseState;
 
+        public static Song themeSong;
+        private int timer = 0;
+
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -44,6 +48,7 @@ namespace RickandMortySlotMachine
             // TODO: Add your initialization logic here
             gameState = GameState.START;
 
+            StartScreen.loadContent(this);
             startScreen = new StartScreen(GraphicsDevice.Viewport.Width,
                 GraphicsDevice.Viewport.Height);
 
@@ -69,6 +74,7 @@ namespace RickandMortySlotMachine
             MousePointer.loadPointerImage(this);
             Button.loadContent(this);
             LabelPrompt.loadSpriteFont(this);
+            themeSong = this.Content.Load<Song>("Rick-and-Morty-Theme-Song");
         }
 
         /// <summary>
@@ -93,6 +99,9 @@ namespace RickandMortySlotMachine
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            if (timer % (33 * 60) == 0) MediaPlayer.Play(themeSong);
+            timer++;
+
             // TODO: Add your update logic here
             if (gameState == GameState.START)
             {
@@ -106,7 +115,6 @@ namespace RickandMortySlotMachine
             {
 
             }
-
             oldMouseState = mouseState;
             base.Update(gameTime);
         }

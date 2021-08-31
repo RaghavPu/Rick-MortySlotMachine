@@ -63,7 +63,7 @@ namespace RickandMortySlotMachine
 
         public static void loadContent(Game game)
         {
-            leverSlot = game.Content.Load<Texture2D>("Lever/lever-slot");
+            leverSlot = game.Content.Load<Texture2D>("Lever/lever-sliding-slot");
             leverHandle = game.Content.Load<Texture2D>("Lever/lever-handle");
         }
 

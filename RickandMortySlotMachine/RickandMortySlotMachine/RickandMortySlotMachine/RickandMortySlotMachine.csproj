@@ -80,6 +80,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="RandomSlotManager.cs" />
+    <Compile Include="Score.cs" />
     <Compile Include="SlotWheel.cs" />
     <Compile Include="SlotWheelManager.cs" />
     <Compile Include="StartScreen.cs" />

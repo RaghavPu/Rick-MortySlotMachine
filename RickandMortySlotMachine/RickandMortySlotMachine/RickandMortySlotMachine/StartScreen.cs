@@ -13,8 +13,11 @@ namespace RickandMortySlotMachine
 {
     class StartScreen
     {
+        public static Texture2D backgroundImage;
+
         MousePointer mousePointer;
         Button playButton;
+
 
         public StartScreen(int width, int height)
         {
@@ -24,6 +27,7 @@ namespace RickandMortySlotMachine
 
         public void Update(MouseState oldMouseState, MouseState mouseState)
         {
+
             mousePointer.Update(mouseState);
             playButton.Update(mouseState.X, mouseState.Y);
 
@@ -32,12 +36,20 @@ namespace RickandMortySlotMachine
             {
                 Game1.gameState = GameState.PLAY;
             }
+
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            mousePointer.Draw(spriteBatch);
+            spriteBatch.Draw(backgroundImage, new Rectangle(0, 0, 800, 480), Color.White);
             playButton.Draw(spriteBatch);
+            mousePointer.Draw(spriteBatch);
+        }
+
+
+        public static void loadContent(Game game)
+        {
+            backgroundImage = game.Content.Load<Texture2D>("RickAndMorty");
         }
     }
 }
